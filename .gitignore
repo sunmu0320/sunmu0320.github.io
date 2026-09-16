@@ -1,0 +1,10 @@
+# Publish only the runtime portfolio files to GitHub Pages.
+*
+!/.gitignore
+!/.nojekyll
+!/index.html
+!/about.html
+!/assets/
+!/assets/**
+!/projects/
+!/projects/**

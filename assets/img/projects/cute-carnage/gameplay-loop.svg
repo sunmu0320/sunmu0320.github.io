@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1000" viewBox="0 0 1200 1000" role="img" aria-labelledby="title desc">
+<title id="title">Cute Carnage — gameplay loop</title><desc id="desc">Design overview in one gameplay scene. During a timed day, choose a supply route, gather wood, scrap and food, and install, upgrade or repair defenses. The day timer triggers night. Zombies attack, towers fire automatically, and the player responds to pressure. The designed night-clear rule requires spawning to finish and all zombies to be defeated before the next day. Base or player health reaching zero is a loss condition. A stable seven-day loop is the next milestone; thirty-day survival, specialized regions and tower abilities are longer-term goals.</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8" fill="none" stroke="#655c50" stroke-width="1.5"/></marker>
+<style>text{font-family:Arial,sans-serif;fill:#272722}.title{font-family:Georgia,serif;font-size:38px;font-weight:bold}.kicker{font-size:13px;letter-spacing:2px;fill:#786951;font-weight:bold}.phase{font-size:25px;font-weight:bold}.heading{font-size:20px;font-weight:bold}.body{font-size:16px;fill:#53554b}.small{font-size:14px;fill:#626154}.flow{fill:none;stroke:#655c50;stroke-width:2;marker-end:url(#arrow)}.planned{stroke-dasharray:7 5}.tag{font-size:12px;letter-spacing:1px;font-weight:bold;fill:#69624d}</style></defs>
+<rect width="1200" height="1000" fill="#f6f1e5"/>
+<text x="48" y="42" class="kicker">CUTE CARNAGE / SYSTEMS DESIGN</text>
+<text x="48" y="93" class="title">Prepare by day. Hold the base at night.</text>
+<text x="48" y="126" class="body">Design overview · Core mechanics prototyped; a stable multi-day loop is still in development.</text>
+<rect x="48" y="153" width="1104" height="45" rx="5" fill="#e7e2d4"/>
+<text x="68" y="181" class="body">ONE GAMEPLAY SCENE</text><text x="355" y="181" class="body">Day and night switch phase in place — no separate gameplay scene load.</text>
+<rect x="78" y="224" width="1044" height="253" rx="10" fill="#efe3c4"/>
+<text x="102" y="260" class="phase">01 / DAY</text><text x="280" y="259" class="body">Limited time · Decide where to go and what to invest in</text>
+<rect x="102" y="284" width="284" height="162" rx="6" fill="#fffdf7" stroke="#cabea2"/>
+<text x="121" y="318" class="heading">Choose a supply route</text>
+<text x="121" y="348" class="body"><tspan x="121">What does the next</tspan><tspan x="121" dy="24">base investment need?</tspan><tspan x="121" dy="31">Balance travel time and hunger.</tspan></text>
+<path class="flow" d="M391 364 H424"/>
+<rect x="435" y="284" width="285" height="162" rx="6" fill="#fffdf7" stroke="#cabea2"/>
+<text x="454" y="318" class="heading">Explore &amp; gather</text>
+<text x="454" y="348" class="body"><tspan x="454">Wood · Scrap · Food</tspan><tspan x="454" dy="24">Collect supplies in the village.</tspan><tspan x="454" dy="31">Return to the home base.</tspan></text>
+<path class="flow" d="M725 364 H758"/>
+<rect x="769" y="284" width="329" height="162" rx="6" fill="#fffdf7" stroke="#cabea2"/>
+<text x="788" y="318" class="heading">Build &amp; maintain</text>
+<text x="788" y="348" class="body"><tspan x="788">Install · Upgrade · Repair</tspan><tspan x="788" dy="24">Spend resources on fixed slots.</tspan><tspan x="788" dy="31">Choose the next investment.</tspan></text>
+<path class="flow" d="M936 477 V529"/>
+<text x="685" y="510" class="small">DAY TIMER ENDS → NIGHT PHASE</text>
+<rect x="78" y="540" width="1044" height="220" rx="10" fill="#dde4e3"/>
+<text x="102" y="577" class="phase">02 / NIGHT</text><text x="303" y="576" class="body">Defend the base · Respond to pressure on the perimeter</text>
+<rect x="769" y="600" width="329" height="130" rx="6" fill="#f9fcfa" stroke="#acbdb9"/>
+<text x="788" y="635" class="heading">Zombie waves approach</text>
+<text x="788" y="665" class="body"><tspan x="788">Enemies attack structures.</tspan><tspan x="788" dy="25">Towers fire automatically.</tspan></text>
+<path class="flow" d="M763 665 H729"/>
+<rect x="435" y="600" width="285" height="130" rx="6" fill="#f9fcfa" stroke="#acbdb9"/>
+<text x="454" y="635" class="heading">Respond to threats</text>
+<text x="454" y="665" class="body"><tspan x="454">Reposition · Fight · Repair</tspan><tspan x="454" dy="25">Keep the home base alive.</tspan></text>
+<path class="flow" d="M430 665 H395"/>
+<rect x="102" y="600" width="284" height="130" rx="6" fill="#f9fcfa" stroke="#82928b" stroke-dasharray="7 5"/>
+<text x="121" y="632" class="heading">Night cleared</text>
+<text x="121" y="660" class="body"><tspan x="121">Final wave spawning finished</tspan><tspan x="121" dy="24">+ no remaining zombies</tspan></text>
+<text x="121" y="714" class="tag">DESIGNED TRANSITION RULE</text>
+<path class="flow planned" d="M102 665 H51 V365 H92"/>
+<rect x="15" y="462" width="66" height="72" rx="4" fill="#f6f1e5"/>
+<text x="22" y="482" class="small"><tspan x="22">NEXT</tspan><tspan x="22" dy="20">DAY</tspan></text>
+<path class="flow" d="M578 732 V791"/>
+<rect x="376" y="801" width="437" height="59" rx="6" fill="#f0dcd2" stroke="#c5a18f"/>
+<text x="397" y="825" class="heading">Loss condition</text>
+<text x="397" y="849" class="body">Base Core HP = 0 or Player HP = 0</text>
+<text x="844" y="812" class="small"><tspan x="844">Each new day brings another</tspan><tspan x="844" dy="21">chance to prepare and grow.</tspan></text>
+<line x1="48" y1="887" x2="1152" y2="887" stroke="#c9c1ae"/>
+<text x="48" y="918" class="kicker">NEXT MILESTONE</text><text x="48" y="947" class="heading">Stable 7-day survival prototype</text>
+<text x="635" y="918" class="kicker">LONGER-TERM DIRECTION</text>
+<text x="635" y="947" class="body">30-day survival · Specialized resource regions</text>
+<text x="635" y="972" class="body">Tower evolution · Randomized abilities</text>
+</svg>

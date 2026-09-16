@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="660" viewBox="0 0 900 660" role="img" aria-labelledby="title desc">
+<title id="title">From two gameplay scenes to one</title><desc id="desc">Before: a daytime scene transfers building and resource data using persistent IDs to a separate nighttime scene. After: day and night are phases within one gameplay scene. The refactor removed obsolete cross-scene transfer logic after validation.</desc>
+<defs><marker id="a" markerWidth="9" markerHeight="9" refX="8" refY="4" orient="auto"><path d="M1 0 L8 4 L1 8" fill="none" stroke="#766653" stroke-width="1.5"/></marker><style>text{font-family:Arial,sans-serif;fill:#34322c}.h{font-size:26px;font-weight:bold}.b{font-size:19px}.s{font-size:17px;fill:#656052}.k{font-size:14px;font-weight:bold;letter-spacing:2px;fill:#846843}.line{fill:none;stroke:#766653;stroke-width:2;marker-end:url(#a)}</style></defs>
+<rect width="900" height="660" fill="#f5efe2"/>
+<text x="36" y="42" class="k">KEEPING THE WORLD CONNECTED</text>
+<text x="36" y="83" class="h">Two scene loads → one continuous world</text>
+<text x="36" y="129" class="k">BEFORE / SEPARATE GAMEPLAY SCENES</text>
+<rect x="36" y="151" width="225" height="118" rx="5" fill="#efe1bf" stroke="#c4b698"/>
+<text x="58" y="193" class="h">Day scene</text><text x="58" y="228" class="b">Village &amp; resources</text>
+<path d="M274 209 H621" class="line"/>
+<text x="296" y="179" class="s">Building + resource data</text>
+<text x="322" y="245" class="s">Persistent-ID transfer</text>
+<rect x="637" y="151" width="227" height="118" rx="5" fill="#dce4e2" stroke="#aabbae"/>
+<text x="659" y="193" class="h">Night scene</text><text x="659" y="228" class="b">Base defense</text>
+<text x="36" y="308" class="s">Concern: forced scene changes could interrupt the connection between phases.</text>
+<path d="M449 332 V375" class="line"/>
+<text x="36" y="403" class="k">AFTER / ONE GAMEPLAY SCENE</text>
+<rect x="36" y="425" width="828" height="145" rx="5" fill="#e8e7dc" stroke="#b5b7a5"/>
+<text x="72" y="475" class="h">Day phase</text>
+<text x="648" y="475" class="h">Night phase</text>
+<path d="M268 465 H622" class="line"/><path d="M622 495 H268" class="line"/>
+<text x="326" y="450" class="s">Phase changes in place</text>
+<text x="72" y="544" class="b">Keep the world loaded → switch day and night through events</text>
+<text x="36" y="611" class="s">Fewer state-transfer dependencies. A simpler, more reliable transition.</text>
+<text x="36" y="638" class="s">Continuous play from daytime preparation to nighttime defense.</text>
+</svg>
