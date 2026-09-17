@@ -56,11 +56,13 @@
 .leadership__metrics div + div { border-left:1px solid var(--color-line); padding-left:18px; }
 .leadership__metrics dt { color:var(--color-accent); font:600 clamp(38px,4vw,56px)/1 var(--font-display); letter-spacing:-.04em; }
 .leadership__metrics dd { margin:10px 0 0; color:var(--color-muted); font-size:13px; line-height:1.45; }
-.other-work { grid-column:1 / -1; display:grid; grid-template-columns:1.15fr 1fr 1fr 1.7fr; gap:24px; align-items:start; padding-top:28px; border-top:1px solid var(--color-line); }
-.other-work h3 { font-size:22px; }
-.other-work p { display:grid; gap:4px; color:var(--color-muted); font-size:13px; }
+.other-work { grid-column:1 / -1; display:grid; grid-template-columns:minmax(220px,.75fr) minmax(0,2.25fr); gap:32px 64px; align-items:start; padding-top:28px; border-top:1px solid var(--color-line); }
+.other-work h3 { margin-bottom:12px; font-size:22px; }
+.other-work p { display:grid; gap:4px; margin:0; color:var(--color-muted); font-size:13px; }
 .other-work strong { color:var(--color-ink); font-weight:600; }
 .other-work__note { line-height:1.6; }
+.other-work__roles { display:grid; grid-template-columns:1fr 1fr; gap:22px 36px; }
+.other-work__roles p { padding-top:14px; border-top:1px solid var(--color-line); }
 .game-highlight-grid { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:18px; }
 .game-card { position:relative; min-width:0; margin:0; aspect-ratio:1/1; overflow:hidden; background:var(--color-surface); }
 .game-card--wide { grid-column:span 2; aspect-ratio:2/1; }
@@ -86,7 +88,7 @@
   .about-section__header { grid-template-columns:1.2fr .8fr; gap:36px; }
   .experience-layout { gap:44px; }
   .leadership { gap:42px; }
-  .other-work { grid-template-columns:1fr 1fr; }
+  .other-work { grid-template-columns:1fr; gap:28px; }
   .game-library-grid { grid-template-columns:repeat(3,minmax(0,1fr)); }
   .about-contact { grid-template-columns:1fr; align-items:start; }
   .about-contact__actions { justify-content:flex-start; }
@@ -108,6 +110,7 @@
   .experience-item { grid-template-columns:1fr; gap:9px; }
   .profile-notes { padding:26px; }
   .other-work { grid-column:auto; grid-template-columns:1fr; gap:20px; }
+  .other-work__roles { grid-template-columns:1fr; gap:16px; }
   .game-highlight-grid { grid-template-columns:1fr 1fr; gap:12px; }
   .game-card--wide { grid-column:span 2; }
   .game-library-grid { grid-template-columns:1fr 1fr; }
